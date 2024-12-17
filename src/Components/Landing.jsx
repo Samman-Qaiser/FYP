@@ -93,7 +93,7 @@ const Landing = () => {
       <div className='page2'>
         <div className='pg2-right'>
           <div>
-            <div style={{ display: "flex", width: "95%", justifyContent: "space-between", margin: "auto" }}>
+            <div className='pg2-r-con' >
               <div className='pg2-right-box'>
                 <h1>01- Model Training</h1>
                 <p>A deep learning model is trained using labeled datasets of acne and clear skin images to classify and detect acne types accurately.</p>
@@ -102,7 +102,7 @@ const Landing = () => {
                 <h1>02- Upload Image</h1><p>The user uploads a facial image to the web application for analysis.</p>
               </div>
             </div>
-            <div style={{ display: "flex", width: "95%", justifyContent: "space-between", margin: "auto" }}>
+            <div className='pg2-r-con' >
               <div className='pg2-right-box'>
                 <h1>03- Image Preprocessing</h1>
                 <p>The application preprocesses the uploaded image by resizing, normalizing, and ensuring clarity before feeding it to the trained model for classification.</p>
@@ -122,40 +122,40 @@ const Landing = () => {
 
       </div>
       <div className='adv-con'>
-        <div style={{ display: "flex", alignItems: "center", width: "95%", margin: "auto", justifyContent: "space-between" }}>
+        <div className='adv-box-con'>
           <p>Your Concern, Our Expertise</p>
           <h1>Our Advantages</h1>
         </div>
-        <div style={{ display: "flex", alignItems: "center", width: "95%", margin: "auto", justifyContent: "space-between" }}>
-          <div className='adv-box'>
-            <div style={{ display: "flex", alignItems: "center", width: "95%", margin: "auto", justifyContent: "space-between" }}><span>Advantages</span><GoArrowUpRight size={74} style={{ color: "#AA9FEE" }} /></div>
+        <div className='adv-box-con' id='adv-box-main'>
+          <div className='adv-box adv' >
+            <div className='adv-box-con'><span>Advantages</span><GoArrowUpRight size={74} style={{ color: "#AA9FEE" }} /></div>
             <h2>Accurate Diagnosis</h2>
             <p>The application uses advanced deep learning models to classify facial acne with precision, helping users identify specific acne types such as blackheads, whiteheads, or pustules.</p>
-            <div style={{ display: "flex", alignItems: "center", width: "95%", margin: "auto", justifyContent: "space-between" }}>  <h1>01</h1><CiCircleCheck size={34} style={{ color: "#AA9FEE" }}/></div>
+            <div className='adv-box-con'>  <h1>01</h1><CiCircleCheck size={54} style={{ color: "#AA9FEE" }}/></div>
             
           </div>
-          <div className='adv-box'>
-            <div style={{ display: "flex", alignItems: "center", width: "95%", margin: "auto", justifyContent: "space-between" }}><span>Advantages</span><GoArrowUpRight size={74} style={{ color: "#AA9FEE" }} /></div>
+          <div className='adv-box adv'>
+            <div className='adv-box-con'><span>Advantages</span><GoArrowUpRight size={74} style={{ color: "#AA9FEE" }} /></div>
             <h2>Personalized Recommendations</h2>
             <p>Based on the acne type detected, the application provides tailored skincare and treatment suggestions, saving users time and effort in finding effective solutions.</p>
-            <div style={{ display: "flex", alignItems: "center", width: "95%", margin: "auto", justifyContent: "space-between" }}> <h1>02</h1>
-            <MdOutlineRecommend size={34} style={{ color: "#AA9FEE" }} />
+            <div className='adv-box-con'> <h1>02</h1>
+            <MdOutlineRecommend size={54} style={{ color: "#AA9FEE" }} />
             </div>
            
           </div>
-          <div className='adv-box'>
-            <div style={{ display: "flex", alignItems: "center", width: "95%", margin: "auto", justifyContent: "space-between" }}><span>Advantages</span><GoArrowUpRight size={74} style={{ color: "#AA9FEE" }} /></div>
+          <div className='adv-box adv'>
+            <div className='adv-box-con'><span>Advantages</span><GoArrowUpRight size={74} style={{ color: "#AA9FEE" }} /></div>
             <h2>User-Friendly and Accessible</h2>
             <p>The web interface is designed to be intuitive, enabling users to upload images easily and receive instant results, making skincare advice accessible to a broader audience.</p>
-            <div style={{ display: "flex", alignItems: "center", width: "95%", margin: "auto", justifyContent: "space-between" }}>
+            <div className='adv-box-con'>
               <h1>03</h1>
-              <FaUserFriends size={34} style={{ color: "#AA9FEE" }} />
+              <FaUserFriends size={54} style={{ color: "#AA9FEE" }} />
             </div>
           
           </div>
         </div>
       </div>
-      <h1 style={{ marginLeft: "2rem" }}>Acne Type Classification</h1>
+      <h1 style={{ marginLeft: "2rem" }} id='h1-acne'>Acne Type Classification</h1>
       <div id='acne-con'>
          <div className='acne-box'><div className='acne-overlay'><h2>Blackheads</h2><p>Blackheads are open comedones caused by clogged pores filled with oil and dead skin cells. They appear as small, dark spots on the skin due to oxidation.</p></div></div>
          <div className='acne-box'><div className='acne-overlay'><h2>Whiteheads</h2><p>Whiteheads are closed comedones where pores are clogged with oil and dead skin cells. Unlike blackheads, they remain under the skin, appearing as white or flesh-colored bumps.</p></div></div>
@@ -164,7 +164,7 @@ const Landing = () => {
          <div className='acne-box'><div className='acne-overlay'><h2>Postules</h2><p>Pustules are similar to papules but contain pus, appearing as red bumps with a white or yellow center. They are often caused by bacterial infection in clogged pores.</p></div></div>
          <div className='acne-box'><div className='acne-overlay'><h2>Cysts</h2><p>Cysts are large, painful, and pus-filled acne lesions that form deep under the skin. They are severe and often require professional treatment to prevent scarring.</p></div></div>
       </div>
-      <h1 style={{ marginLeft: "4rem" }}>Why Choose Us?</h1>
+      <h1  id='h1-choose'>Why Choose Us?</h1>
       <div id='page3'>
           <div className='pg3-left'>
           <div>
@@ -188,16 +188,16 @@ const Landing = () => {
             </div>
             <div className='canvas-con'>
          
-            <img src='../../public/blob.gif'  />
+            <img src='./blob.gif'  />
             </div>
                
             </div>
             <div className='benefits-con'>
-            <div className='benefits-div'><h3><GrMoney size={24} />
+            <div className='benefits-div'><h3><GrMoney size={34} style={{color:"#9588E8"}} />
             Cost affective</h3><p>Eliminates transportation, hospital and consultation charges.</p></div>
-            <div className='benefits-div'><h3><IoTime size={24}/>24/7 Availability</h3><p>Available 24/7, allowing users to get help without waiting for clinic hours.</p></div>
-            <div className='benefits-div'><h3><IoAccessibility size={24}/>Accessibility </h3><p>Access healthcare advice from homes without visiting hospital.</p></div>
-            <div className='benefits-div'><h3><RiChatPrivateFill  size={24}/>Privacy</h3><p>Tailored to individual concerns while maintaining user anonymity.</p></div>
+            <div className='benefits-div'><h3><IoTime size={34} style={{color:"#9588E8"}} />24/7 Availability</h3><p>Available 24/7, allowing users to get help without waiting for clinic hours.</p></div>
+            <div className='benefits-div'><h3><IoAccessibility size={34} style={{color:"#9588E8"}} />Accessibility </h3><p>Access healthcare advice from homes without visiting hospital.</p></div>
+            <div className='benefits-div'><h3><RiChatPrivateFill  size={34} style={{color:"#9588E8"}} />Privacy</h3><p>Tailored to individual concerns while maintaining user anonymity.</p></div>
             </div>
            
           </div>
