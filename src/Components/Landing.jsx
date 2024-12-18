@@ -15,6 +15,7 @@ import { MdOutlineRecommend } from "react-icons/md";
 import { gsap } from "gsap";
 import { RiChatPrivateFill } from "react-icons/ri";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import  './Landingstyle.css';
 gsap.registerPlugin(ScrollTrigger);
 const Landing = () => {
   useEffect(() => {

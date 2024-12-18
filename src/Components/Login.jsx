@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import robot from '/flyingRobot.png'
 import logo from '/logoWhite.jpg'
+import './Login.css'
 import { Link, useNavigate } from 'react-router-dom'
 import 'font-awesome/css/font-awesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';

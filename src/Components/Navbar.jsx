@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './style.css'
+import  './Landingstyle.css';
 import { CgMenuRight } from "react-icons/cg";
 import { Link, useNavigate } from 'react-router-dom'
 import logo from '/logo.jpg'

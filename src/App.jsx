@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import HeroSection from './Components/HeroSection'
 import Navbar from './Components/Navbar'
 import Landing from './Components/Landing.jsx'
@@ -25,7 +24,7 @@ const [userName,setuserName]=useState("")
 const [isLoggedIn,setLoggedIn]=useState(false)
 function Layout({children}){
 const location=useLocation()
-const hideNavbarAndFooter=['/chat','/login','/signup'].includes(location.pathname)
+const hideNavbarAndFooter=['/chat','/login','/signup','/contact'].includes(location.pathname)
 return(
   <>
     {!hideNavbarAndFooter&&<Navbar />}

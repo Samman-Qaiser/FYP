@@ -50,8 +50,12 @@ const Chat = ({userName}) => {
            <div className='chat-con'>
             <div id='chat-left'>
               <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%",padding:"0.3rem",color:"#9588E8",boxSizing:"border-box"}}>
+              <h2>Your Chat History</h2>
+              <div style={{gap:"0.7rem",display:"flex",alignItems:"center"}}>
               <FaSearch size={25} style={{fontWeight:"bolder"}}/>
               <FaRegPenToSquare size={25}/>
+              </div>
+            
               </div>
             </div>
             <div id="chat-right" style={{ width: '80%', background: '#fff', display: 'flex', flexDirection: 'column' }}>

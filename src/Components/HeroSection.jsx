@@ -1,6 +1,7 @@
 import React from 'react'
 import video from '/modelVedio.mp4'
 import image from '/modelImage.png'
+import './Landingstyle.css'
 const HeroSection = () => {
   return (
     <>

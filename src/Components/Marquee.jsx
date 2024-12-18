@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import './style.css'
+import  './Landingstyle.css';
 import LocomotiveScroll from 'locomotive-scroll';
 function Marquee() {
   return (

@@ -1,0 +1,145 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Varela+Round&display=swap'); */
+/* body{
+    font-size: 100%;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Varela Round", sans-serif;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.blob {
+  background-image: url(blob.png);
+  background-size: cover;
+  background-position: center;
+  /* width: 50vw; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.textContainer {
+  color: white;
+  z-index: 2;
+  line-height: 2rem;
+}
+.gmailBox{
+  background-color: rgba(250,250,250, 0.3);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+i{
+  margin-right: 0.5rem;
+}
+.connectIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connectIcon i{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  /* border: 1px solid rgba(250,250,250, 0.3); */
+  background-color: rgba(250,250,250, 0.3);
+  padding: 0.7rem; 
+  border-radius: 50%;
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 3rem; 
+  height: 3rem;
+  line-height: 0;
+}
+
+.connectIcon i:hover{
+
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.robo{
+  width: 15rem;
+  position: absolute;
+  left: 28%;
+  z-index: 3;
+}
+.contactFormContainer{
+  border-radius: 1px solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formbox{
+  width: 70%;
+}
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+label{
+  margin-top: 2rem;
+  font-weight: 600;
+}
+input{
+  padding: 1.5rem 0 0 0;
+  padding-bottom: 0.3rem;
+  border: none;
+  border-bottom: 1px solid rgb(193, 188, 188);
+  font-size: 1rem;
+  /* To made the input transparent after autofill */
+  transition: background-color 5000s ease-in-out;
+}
+
+input:focus{
+  /* border: none; */
+  outline: none;
+}
+
+input:-webkit-autofill{
+  background-color: transparent !important;
+}
+
+input::placeholder{
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.submitButton{
+  background-color: #735ff6;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem ;
+}
+
+.submitButton:hover{
+  background-color: #9588E8;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+@media (max-width: 959px) {
+  .robo{
+  position: relative;
+ 
+}
+}
