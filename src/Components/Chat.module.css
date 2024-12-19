@@ -1,0 +1,130 @@
+.chatcon{
+    width: 100vw;
+    display: flex;
+    min-height: 85vh;
+    margin-top: 15vh;
+
+  }
+  @font-face{
+    font-family: 'mona';
+    src: url('../assets/Font/mona-sans/Mona-Sans-Regular.ttf');
+   
+}
+body{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    font-family: 'mona';
+    overflow-x: hidden;
+    position: relative;
+}
+nav{
+    width: 100vw;
+    height: 15vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+  .chatleft{
+    width: 20%;
+    min-height: 100%;
+    background-color: #F9F9F9;
+    overflow-y: scroll;
+  }
+  .chatright{
+    width: 80%;
+  
+  }
+  .usernav{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: white;
+
+    z-index: 9999;
+    
+  }
+  .usernav img{
+    width: 30px;
+    border-radius: 50%;
+  }
+  .logo{
+    width: 150px;
+  }
+  .person{
+    box-sizing: border-box;
+    padding: 1rem;
+    color: black;   
+    border-radius: 0.5rem; 
+    width: 20vw;
+    height: 40vh;
+    position: fixed;
+    top:15vh;
+    right: 2vh;
+    background-color: white;
+ 
+    display: none;
+    z-index: 9;
+    transition: all ease 0.7s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .info{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  
+  }
+  .info h2{
+    line-height: 3rem;
+  }
+  .info img{
+    width: 25%;
+    height: 40%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .info p{
+    color: blue;
+    line-height: 1rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+  .btn{
+    border: 1px solid rgb(160, 159, 159);
+    padding: 0.51rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+  gap: 0.4rem;
+  color: white;
+  background-color: #9588e5;
+  }
+  .btn:hover{
+    background-color: rgb(160, 159, 159);
+    color: white;
+    cursor: pointer;
+    border: transparent;
+  }
+  .btncon{
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: space-evenly;
+   
+  }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import  './Landingstyle.css';
+import  styles from'./Landingstyle.module.css';
 
 export const Footer = () => {
   // Generate bubbles
@@ -14,7 +14,7 @@ export const Footer = () => {
     return (
       <div
         key={i}
-        className="bubble"
+        className={styles.bubble}
         style={{
           "--size": `${size}rem`,
           "--distance": `${distance}rem`,
@@ -27,11 +27,11 @@ export const Footer = () => {
   });
 
   return (
-    <div className="main">
-      <div className="footer">
-        <div className="bubbles">{bubbles}</div>
-        <div className="content">
-          <div className="content-inner">
+    <div className={styles.mainn}>
+      <div className={styles.footer}>
+        <div className={styles.bubbles}>{bubbles}</div>
+        <div className={styles.content}>
+          <div className={styles.contentinner}>
              <div><h1>
              Your Personalized Companion
              for Smarter Acne Detection
@@ -52,7 +52,7 @@ export const Footer = () => {
              <ul>
                 <li><Link to=''>Terms and Condition</Link></li>
                 <li><Link to=''>Privacy and Policy</Link></li>
-                <li className="button"><Link to=''>  Get Started</Link></li>
+                <li className={styles.button}><Link to=''>  Get Started</Link></li>
     
               </ul>
              </div>
@@ -60,7 +60,7 @@ export const Footer = () => {
           
           
          
-        <div className="footer-b"><p > Copy Rights Reserved | ©2024</p></div>
+        <div className={styles.footerb}><p > Copy Rights Reserved | ©2024</p></div>
          </div>
       </div>
       <svg style={{ position: "fixed", top: "100vh" }}>
