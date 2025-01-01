@@ -31,7 +31,7 @@ const Circles = () => {
 
     return (
         <div className={styles.circlecon} ref={circleConRef}>
-            {['Dataset Preparation', 'Image Preprocessing', 'Model Training', 'Model Testing', 'Performance Evaluation'].map((text, index) => (
+            {['Confidentiality', 'Security', 'Temporary', 'Transparency'].map((text, index) => (
                 <div
                     key={index}
                     className={`${styles.circle} ${styles[`c-${index + 1}`]}`}

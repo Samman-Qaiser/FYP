@@ -20,8 +20,8 @@ const Navbar = () => {
       </div>
       <div className={styles.buttoncon}>
       <div style={{ backgroundColor: 'white',borderRadius:"2rem" }}>
-      <button className={styles.button} ><Link to='/login'>Login</Link></button>/
-      <button className={styles.button} ><Link to='/signup'>SignUp</Link></button>
+      <button className={styles.button} id='nav-btn'  ><Link to='/login' style={{color:"black"}}>Login</Link></button>/
+      <button className={styles.button} id='nav-btn'  ><Link to='/signup' style={{color:"black"}}>SignUp</Link></button>
       </div>
       
       </div>

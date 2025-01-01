@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import HeroSection from './HeroSection'
 import Marquee from './Marquee'
-import video from '/Acne_Diagnosis_and_Treatment_App.mp4'
+import video from '/Acne_Diagnosis_and_Treatment_video.mp4'
 import { GrMoney } from "react-icons/gr";
 import { IoAccessibility } from "react-icons/io5";
 import { IoTime } from "react-icons/io5";
@@ -21,41 +21,6 @@ const Landing = () => {
   const advcon=useRef(null)
   const advbox=useRef(null)
   const acnecon=useRef(null)
-  useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: advcon.current,
-        start: "top 20%",
-        end: "top 0%",
-        scrub: true,
-      }
-    })
-    tl.from(advbox.current, {
-      y: "160%",
-      stagger: 0.5
-    })
-    tl.to(advbox.current, {
-      y: "0%",
-
-    })
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".acnecon",
-        start: "top 20%",
-        end: "top 0%",
-        scrub: true,
-    
-      }
-    })
-    // tl2.from('.acne-box', {
-    //   y: "160%",
-    //   stagger: 1
-    // })
-    // tl2.to('.acne-box', {
-    //   y: "0%",
-
-    // })
-  }, [])
 
 
   return (
@@ -68,20 +33,20 @@ const Landing = () => {
           <div>
             <div className={styles.pg2rcon} >
               <div className={styles.pg2rightbox}>
-                <h1>01- Model Training</h1>
-                <p>A deep learning model is trained using labeled datasets of acne and clear skin images to classify and detect acne types accurately.</p>
+                <h1>01- Your Privacy is <br/> Our Priority </h1>
+                <p>We ensure that your uploaded images and data are kept private. We do not share, sell, or misuse any personal information.</p>
               </div>
               <div className={styles.pg2rightbox}>
-                <h1>02- Upload Image</h1><p>The user uploads a facial image to the web application for analysis.</p>
+                <h1>02- Secure Image <br/>Uploads</h1><p>When you upload an image, it’s transmitted securely using encryption, ensuring no unauthorized access to your data.</p>
               </div>
             </div>
             <div className={styles.pg2rcon} >
               <div className={styles.pg2rightbox}>
-                <h1>03- Image Preprocessing</h1>
-                <p>The application preprocesses the uploaded image by resizing, normalizing, and ensuring clarity before feeding it to the trained model for classification.</p>
+                <h1>03- Temporary Data<br/> Storage</h1>
+                <p>Uploaded images are only stored temporarily for analysis purposes and are automatically deleted after processing to protect your privacy.</p>
               </div>
               <div className={styles.pg2rightbox}>
-                <h1>04- Result Recommendations </h1><p>The model processes the image, detects acne (if present), classifies its type (e.g., blackheads, whiteheads, pustules), and provides detailed results along with tailored skincare recommendations based on the analysis.</p>
+                <h1>04- Transparent Data Handling </h1><p>We are clear about how your data is used. The images are analyzed only for acne detection, and we don’t store or use your data for anything else.</p>
               </div>
             </div>
           </div>
@@ -172,35 +137,18 @@ const Landing = () => {
 
         
           </div>
-          <div className={styles.pg3right}>
-            <div className={styles.pg3rtop}>
-            <div className={styles.sumcon}>
-            <h2>Combining AI and healthcare insights to assist users in their skincare free of cost</h2>
-                 <details>
-                  <summary><span className={styles.btn}>Read More</span></summary><p>Using advanced AI and healthcare expertise, our chatbot delivers personalized recommendations to address unique skin concerns.
-                  Say goodbye to guesswork and
-                  hello to confidence—your
-                  perfect skincare companion
-                  is just a click away!</p>
-                 </details>
-            </div>
-            <div className={styles.canvascon}>
-         
-            <img src='./blob.gif'  />
-            </div>
-               
-            </div>
+      </div>
             <div className={styles.benefitscon}>
-            <div className={styles.benefitsdiv}><h3><GrMoney size={34} style={{color:"#9588E8"}} />
-            Cost affective</h3><p>Eliminates transportation, hospital and consultation charges.</p></div>
-            <div className={styles.benefitsdiv}><h3><IoTime size={34} style={{color:"#9588E8"}} />24/7 Availability</h3><p>Available 24/7, allowing users to get help without waiting for clinic hours.</p></div>
-            <div className={styles.benefitsdiv}><h3><IoAccessibility size={34} style={{color:"#9588E8"}} />Accessibility </h3><p>Access healthcare advice from homes without visiting hospital.</p></div>
-            <div className={styles.benefitsdiv}><h3><RiChatPrivateFill  size={34} style={{color:"#9588E8"}} />Privacy</h3><p>Tailored to individual concerns while maintaining user anonymity.</p></div>
+               <div className={styles.benefitsdiv}><h3><GrMoney size={34}  />
+               Cost affective</h3><p>Eliminates transportation, hospital and consultation charges.</p></div>
+               <div className={styles.benefitsdiv}><h3><IoTime size={34} />24/7 Availability</h3><p>Available 24/7, allowing users to get help without waiting for clinic hours.</p></div>
+               <div className={styles.benefitsdiv}><h3><IoAccessibility size={34} />Accessibility </h3><p>Access healthcare advice from homes without visiting hospital.</p></div>
+               <div className={styles.benefitsdiv}><h3><RiChatPrivateFill  size={34}  />Privacy</h3><p>Tailored to individual concerns while maintaining user anonymity.</p></div>
             </div>
            
-          </div>
+          
        
-      </div>
+     
     </div>
   )
 }

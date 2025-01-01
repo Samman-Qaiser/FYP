@@ -1,6 +1,7 @@
 import React from 'react'
 import video from '/modelVedio.mp4'
 import image from '/modelImage.png'
+import { Link, useNavigate } from 'react-router-dom'
 import  styles from'./Landingstyle.module.css';
 const HeroSection = () => {
   return (
@@ -12,7 +13,7 @@ const HeroSection = () => {
         Your Personalized Companion <br/> for Smarter <span style={{color:'#9588E8'}}>Acne Detection</span>
         </h1>
             <p>Personalized solutions for every skin type, backed by advanced detection and prevention tools. Using advanced AI and healthcare expertise, our chatbot delivers personalized recommendations to address unique skin concerns. Detect your acne type to get started.</p>
-            <button className={styles.button}>Get Started</button>
+            <button className={styles.button}><Link to='/login'>Get Started</Link></button>
         </div>
            
         </div>

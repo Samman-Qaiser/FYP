@@ -8,13 +8,15 @@
 body{
   background-color: white ;
   /* font-family: calibri; */
+  font-family: "Varela Round", sans-serif;
 
 
 }
 
 .main{
   display: flex;
-  font-family: "Varela Round", sans-serif;
+   font-family: "Varela Round", sans-serif;
+
 }
 
 .WelcomeContainer{
@@ -112,7 +114,7 @@ input::placeholder{
   margin-top: 3rem;
   margin-bottom: 1rem;
   text-decoration: none;
-
+  font-size: 1rem;
 }
 .forgotPass:hover{
   opacity: 0.8;
@@ -168,13 +170,14 @@ input::placeholder{
 }
 
 
-.fa-google {
+.googleIcon {
   background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 .fa-facebook-square{

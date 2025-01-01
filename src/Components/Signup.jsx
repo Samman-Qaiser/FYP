@@ -37,14 +37,14 @@ const Signup = () => {
       </div>
       <div className={styles.signupContainer}>
         <div className={styles.FormContainer}>
-          <h1 style={{color: "#8072e1"}}>Create Account</h1>
+          <h1 style={{color: "#8072e1", fontSize: '2.2rem'}}>Create Account</h1>
           <form className={styles.inputContainer} action="">
             <input type="text" value={name}  onChange={(e)=>setname(e.target.value)} placeholder="Full Name" />
             <input type="email" value={email} onChange={(e)=>setemail(e.target.value)} placeholder="Email Address" />
             <input type="password" value={password} onChange={(e)=>setpass(e.target.value)} placeholder="Password" />
             <div className={styles.checkboxWrapper}>
               <input
-                className={styles.checkboxContainer}
+                className={styles.checkboxinput}
                 type="checkbox"
                 id="policy"
                 name="policy"
@@ -60,10 +60,10 @@ const Signup = () => {
         <div className={styles.thirdpartysignup}>
           <h4 className={styles.LineText}>Or Sign Up With</h4>
           <div className={styles.icons}>
-            <i class="fab fa-google "></i>
-            <i class="fa-brands fa-facebook-square"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fab fa-linkedin"></i>
+            <i className={`fab fa-google ${styles.googleIcon}`}></i>
+            <i className="fa-brands fa-facebook-square" style={{color : '#1c40ad'}}></i>
+            <i className="fa-brands fa-twitter" style={{color : '#285AEB'}}></i>
+            <i className="fab fa-linkedin" style={{color : '#173cae'}}></i>
           </div>
           <p style={{ color: "grey", textDecoration: "underline",fontSize:'1.1rem' }}>
             Already have an account?{" "}
