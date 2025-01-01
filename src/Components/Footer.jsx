@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import  styles from'./Landingstyle.module.css';
+import  styles from './Landingstyle.module.css';
 
 export const Footer = () => {
   // Generate bubbles
@@ -52,7 +52,7 @@ export const Footer = () => {
              <ul>
                 <li><Link to=''>Terms and Condition</Link></li>
                 <li><Link to=''>Privacy and Policy</Link></li>
-                <li className={styles.button}><Link to=''>  Get Started</Link></li>
+                <li className={styles.button}><Link to='/login'>  Get Started</Link></li>
     
               </ul>
              </div>

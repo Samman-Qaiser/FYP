@@ -19,12 +19,13 @@ import {
   Navigate,
 } from "react-router-dom";
 import { path } from 'framer-motion/client'
+import Working from './Components/Working.jsx'
 function App() {
 const [userName,setuserName]=useState("")
 const [isLoggedIn,setLoggedIn]=useState(false)
 function Layout({children}){
 const location=useLocation()
-const hideNavbarAndFooter=['/chat','/login','/signup','/contact'].includes(location.pathname)
+const hideNavbarAndFooter=['/chat','/login','/signup'].includes(location.pathname)
 return(
   <>
     {!hideNavbarAndFooter&&<Navbar />}
@@ -43,12 +44,13 @@ return(
  <Route path='about' element={<About />}/>
  <Route path='/services' element={<Services />}/>
  <Route path='/contact' element={<Contact />}/>
- <Route path='/working' element={<Howitwork />}/>
+
  <Route path="/chat"   element={isLoggedIn? (<Chat userName={userName} />):(<Navigate to='/login' replace/>)}/>
  <Route path='/faqs'   element={<FAQ/>}/>
  <Route path='/faqs'   element={<FAQ/>}/>
  <Route path='/login' element={<Login setLoggedIn={setLoggedIn} setuserName={setuserName}/>} />
  <Route path='/signup' element={<Signup />}/>
+ <Route path='/working' element={<Working/>}/>
 </Routes>
      </Layout>
      

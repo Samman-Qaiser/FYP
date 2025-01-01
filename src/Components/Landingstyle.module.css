@@ -573,12 +573,14 @@ left: 10%;
   display: flex;
   margin-top: 10vh;
   justify-content: space-between;
+
 }
 .contentinner > div {
   width: 33.3%;
   box-sizing: border-box;
   padding: 1rem;
   color: #f5f5f5;
+
 }
 ul {
   list-style: none;
@@ -658,7 +660,7 @@ h4 {
 }
 .logo {
   width: 150px;
-  /* margin-top: 2.5rem; */
+
 }
 
 
@@ -831,10 +833,11 @@ h4 {
   }
   .advboxmain {
     flex-direction: column;
-
+margin-top: 2rem;
     align-items: flex-start;
     gap: 1rem;
-    height: 140vh;
+    height: 90vh;
+    padding: 0;
   }
   .pg2rightbox {
     width: 100%;
@@ -848,8 +851,8 @@ h4 {
     display: none;
   }
   .adv {
-    width: 100vw;
-    height: 50vh;
+    width: 98vw;
+    height: 30vh;
   }
   .advcon h1 {
     font-size: 1rem;
@@ -859,7 +862,7 @@ h4 {
   }
   .acnecon {
     flex-direction: column;
-    margin-top: 50vh;
+ font-size: 1rem;
     gap: 1rem;
 
     min-height: 170vh;
@@ -872,21 +875,9 @@ h4 {
 
   .benefitsdiv {
     width: 100%;
-    font-size: 0.6rem;
+
   }
-  .benefitsdiv p {
-    font-size: 0.65rem;
-  }
-  /* .canvas-con img{
-    top: 0;
-    transform: translateY(-100%);
-} */
-  .sumcon p {
-    width: 100vw;
-  }
-  .sumcon h2 {
-    font-size: 1rem;
-  }
+
   .h1acne {
    
     display: block;
@@ -897,21 +888,9 @@ h4 {
     font-size: 1.5rem;
     margin-left: 0.9rem;
   }
-  .page3 {
-    flex-direction: column;
-    align-items: flex-start;
+ 
 
-    min-height: 155vh;
-  }
-  .pg3rtop {
-    height: 20%;
-    margin-top: 20vh;
-  }
-  .pg3left div {
-    width: 97%;
-    height: 100%;
-    margin: auto;
-  }
+
   .pg3left video {
     width: 100%;
     margin: auto;
@@ -920,26 +899,49 @@ h4 {
   .pg3left {
     width: 100vw;
   }
-  .pg3right {
-    width: 100%;
-    height: 40%;
-  }
-  .benefitsdiv h3 {
-    width: 30%;
-  }
-  .benefitsdiv p {
-    width: 65%;
  
+  .benefitsdiv h3 {
+    width: 90%;
   }
+
   .benefitsdiv {
+    height: 23%;
     align-items: flex-start;
   }
+
   .benefitscon {
-    padding: 0;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: 70vh;
+    gap: 2rem;
   }
+
+  .logo {
+    width: 100px;
+  }
+  .pg3left{
+    height: 100%;
+    align-items: flex-start;
+  }
+  .pg3left video{
+    left: 0%;
+
+  }
+  .page3 {
+    width: 100vw;
+    height: 25vh;
+ 
+  padding: 0.5rem;
+  }
+
   .footer {
+    margin-top: 5vh;
     overflow-x: hidden;
-    height: 100vh;
+    height: 75vh;
+  }
+  .footer .button{
+ 
+    margin: auto;
   }
   .contentinner {
     flex-direction: column;
@@ -964,14 +966,7 @@ h4 {
   }
   .footerb p {
     transform: translateX(-50%);
-    background-color:red;
     font-size: 1rem;
   }
-  .pg3rtop {
-    align-items: flex-start;
-    height: 32vh;
-  }
-  .logo {
-    width: 100px;
-  }
+  
 }
