@@ -10,7 +10,7 @@
   font-family: "Varela Round", sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 .blob {

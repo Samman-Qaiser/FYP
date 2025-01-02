@@ -98,11 +98,11 @@ export default function About() {
                 </div>
                 <p className={style.services}>Services we offer</p>
                 <div className={`${style.descriptioncontainer} ${isAnimated ? style.animate : ''}`}>
-                    <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div className={style.advantage} style={{ background: '#dbd8f0' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
                             <div className={style.icondiv}>
-                                {/* <p style={{ color: 'white', textAlign: 'center', fontSize: '20px' }}>{index}</p> */}
-                                <IoSearchOutline size={20} color="white" />
+                                <p style={{ color: 'white', textAlign: 'center', fontSize: '17px' }}>   <IoSearchOutline  color="white" /></p>
+                             
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Acne detection</p>
                         </div>
@@ -110,23 +110,25 @@ export default function About() {
                         <img src={Detection} width='85%' height={200} />
                         <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>By analyzing your skin type and identifying the specific acne category, we provide tailored recommendations to help you manage and treat acne more effectively. Our system delivers expert insights for healthier, clearer skin.</p>
                     </div>
-                    <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div className={style.advantage} style={{ background: '#dbd8f0' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
                             <div className={style.icondiv}>
-                                {/* <p style={{ color: 'white', textAlign: 'center', fontSize: '20px' }}>{index}</p> */}
-                                <MdOutlineHealthAndSafety size={20} color="white" />
+                            <p style={{ color: 'white', textAlign: 'center', fontSize: '17px' }}> 
+                                  <MdOutlineHealthAndSafety color="white" />
+                    </p>
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Preventive measures</p>
                         </div>
                         <div className={style.whiteline}></div>
                         <img src={DoctorMeeting3} width='85%' height={200} />
-                        <p style={{ margin: '0px 20px',  fontSize: '15px', margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Prevention is essential for clear skin. Our app offers personalized tips, from skincare routines to lifestyle and dietary changes, all tailored to your skin type. Reduce breakouts and maintain a glowing complexion with expert advice designed for your unique needs.</p>
+                        <p style={{ margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4' }}>Prevention is essential for clear skin. Our app offers personalized tips, from skincare routines to lifestyle and dietary changes, all tailored to your skin type. Reduce breakouts and maintain a glowing complexion with expert advice designed for your unique needs.</p>
                     </div>
-                    <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div className={style.advantage} style={{ background: '#dbd8f0' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
                             <div className={style.icondiv}>
-                                {/* <p style={{ color: 'white', textAlign: 'center', fontSize: '20px' }}>{index}</p> */}
-                                <AiOutlineMedicineBox size={20} color="white" />
+                            <p style={{ color: 'white', textAlign: 'center', fontSize: '17px' }}> 
+                                <AiOutlineMedicineBox  color="white" />
+                                </p>
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>Medication</p>
                         </div>
@@ -134,11 +136,11 @@ export default function About() {
                         <img src={Medication} width='85%' height={200} />
                         <p style={{margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4'}}>Based on your acne type and skin condition, we provide personalized medication suggestions, including over-the-counter options and professional treatments. Our AI-driven recommendations ensure you receive the right care for clearer, healthier skin.</p>
                     </div>
-                    <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div className={style.advantage} style={{ background: '#dbd8f0' }}>
                         <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginLeft: '20px' }}>
                             <div className={style.icondiv}>
-                                {/* <p style={{ color: 'white', textAlign: 'center', fontSize: '20px' }}>{index}</p> */}
-                                <GrSecure size={20} color="white" />
+                                <p style={{ color: 'white', textAlign: 'center', fontSize: '20px' }}><GrSecure  style={{ color: 'white', textAlign: 'center', fontSize: '17px' }} /></p>
+                                
                             </div>
                             <p style={{ fontWeight: "bold", fontSize: '18px' }}>User privacy</p>
                         </div>
@@ -153,7 +155,7 @@ export default function About() {
                         <div className={`${style.matters} ${style[animationState]}`}>
                             <img src={contentArray[index]['img']} className={style.matterimg}>
                             </img>
-                            <p style={{margin: '0px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4'}}>{contentArray[index]['text']}</p>
+                            <p style={{margin: '10px 20px', fontSize: '16px', fontFamily: 'Tahoma, sans-serif', lineHeight: '1.4'}}>{contentArray[index]['text']}</p>
                         </div>
                     </div>
                 </div>

@@ -32,7 +32,7 @@
 .icondiv {
     height: 25px;
     width: 25px;
-    background-color: #003366;
+    background-color:#9588e8;
     padding: 10px;
     border-radius: 10px;
     display: none;
@@ -86,7 +86,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
-        background-color: rgb(212, 232, 255);
+        background-color: #dbd8f0;
         border-radius: 15px;
         gap: 20px;
     }
